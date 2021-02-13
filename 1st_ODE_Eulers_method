@@ -1,0 +1,17 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import math
+
+
+''' 
+function --> dy(t)/dt=t**2-t
+         --> y(t)=t**3/3 +c
+             y(0)=10            
+'''
+
+t_domain=np.linspace(0,3,100)
+
+delta_t=t_domain[1]-t_domain[0]
+
+y_domain=np.zeros(100)
+y_domain[0]=5
